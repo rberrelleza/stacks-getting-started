@@ -15,7 +15,7 @@ services:
     image: okteto.dev/redis
     build:
       context: .
-      dockefile: Dockerfile.redis
+      dockerfile: Dockerfile.redis
     ports:
       - 6379
     resources:
