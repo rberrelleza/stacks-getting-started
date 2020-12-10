@@ -14,7 +14,6 @@ services:
   redis:
     image: okteto.dev/redis
     build:
-      context: .
       dockerfile: Dockerfile.redis
     ports:
       - 6379
