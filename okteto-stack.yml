@@ -12,7 +12,10 @@ services:
       memory: 128Mi
 
   redis:
-    image: redis
+    image: okteto.dev/redis
+    build:
+      context: .
+      dockefile: Dockerfile.redis
     ports:
       - 6379
     resources:
