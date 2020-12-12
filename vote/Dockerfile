@@ -11,7 +11,9 @@ ADD requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 # Copy our code from the current folder to /app inside the container
-ADD . /src
+ADD templates /src/templates
+ADD static/stylesheets /src/static/stylesheets
+ADD app.py /src/app.py
 
 # Make port 8080 available for links and/or publish
 EXPOSE 8080
