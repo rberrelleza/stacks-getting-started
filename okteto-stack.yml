@@ -2,7 +2,7 @@ name: voting-app
 services:
   vote:
     annotations:
-      dev.okteto.com/auto-ingress: "private"
+      dev.okteto.com/private: "true"
     public: true
     image: okteto.dev/vote
     build: vote
